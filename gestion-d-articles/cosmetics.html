@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cosmetics.css" />
+    <title>cosmetics</title>
+  </head>
+  <body>
+
+    <h1>Cosmetics Shop</h1>
+    <div class="all">
+      <div class="section1">
+        <h2>Search a Product</h2>
+        
+          <!--NAME-->
+          <input type="text" placeholder="Name" class="infos" id="nom" /><br />
+          <p id="msg1"></p>
+
+          <!--TYPE-->
+          <label for="">Type :</label><br />
+          <select name="type" id="select">
+            <option></option>
+            <option>Parfums</option>
+            <option >Soins esthétiques</option>
+            <option >Produits solaires</option>
+            <option>Beauté des mains et des pieds</option>
+            <option >Produits de maquillage</option>
+            <option>Entretien capillaires</option>
+            <option>Hygiène et toilette</option>
+        </select><br />
+          <p id="msg2"></p>
+
+          <!--BRAND-->
+          <label for="">Brand :</label><br />
+          <select name="brand" id="Brand">
+            <option></option>
+            <option>Dior</option>
+            <option>Morphe</option>
+            <option>The Ordinary</option>
+            <option>Coco and Eve</option>
+            <option>Clinique</option></select
+          ><br />
+          <p id="msg3"></p>
+
+          <!--PRIX-->
+          <input
+            type="text"
+            placeholder="Price"
+            class="infos"
+            id="prix"
+          /><br />
+          <p id="msg4"></p>
+          <!--DATE-->
+          <input
+            type="date"
+            placeholder="Production's date"
+            class="infos"
+            id="date"
+          /><br />
+          <p id="msg5"></p>
+          <!--PROMOTION-->
+          <div class="promotion">
+            <div class="promotion-radio">
+                <label class="help-bl" for="">Promotion :</label>
+                <label class="help-radio" for="">Oui :</label>
+                <input name="radio"  value="oui"  type="radio" id="radio-promotion-1">
+                <label class="help-radio" for="">Non :</label>
+                <input name="radio" value="Non" type="radio" id="radio-promotion-2">
+            </div>
+            <p id="cate"></p>
+            <p id="msg6"></p>
+      
+        <div id="btn">
+          <button id="submit">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!--TABLEAU-->
+      <div class="section2">
+        <table id="table">
+          <tr>
+            <th>Nom</th>
+            <th>Marque</th>
+            <th>Prix</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>promotion</th>
+            <th>Actions</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+
+        <!-- <button type="" id="" class="savebtn">Replace</button> -->
+      </div>
+
+    <script src="cosmetics.js"></script>
+  </body>
+</html>
